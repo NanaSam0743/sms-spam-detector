@@ -1,37 +1,41 @@
-# 📱 SMS Spam Detection using Machine Learning
+# Spam SMS Detection
 
-This project is a part of my Machine Learning Internship at @Indolike.  
-It focuses on building a machine learning model that can classify SMS messages as **Spam** or **Ham (not spam)** using natural language processing (NLP) techniques.
+A machine learning project to classify SMS messages as **Spam** or **Ham (Not Spam)** using Python and various ML algorithms.
 
-## 📌 Description
-The goal of this project is to develop a simple and accurate spam classifier for SMS messages.  
-Using the **SMS Spam Collection Dataset**, the text data is cleaned, vectorized using **TF-IDF**, and modeled with a **Multinomial Naive Bayes classifier**, which is a strong baseline for text classification tasks.
+---
 
-## 🧠 Technologies & Tools
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- TF-IDF Vectorizer
-- Naive Bayes Classifier
-- Matplotlib & Seaborn (for visualization)
+## 🧰 Technologies Used
 
-## 📊 Model Performance
-The model achieves over **95% accuracy** on the test set and shows strong performance across precision and recall metrics.
+- Python 3.x
+- scikit-learn
+- pandas
+- numpy
+- Logistic Regression
+- Jupyter Notebook / Google Colab
+
+---
+
+## 🚀 Project Overview
+
+This project builds a text classification model to automatically detect spam messages from SMS data. The pipeline includes:
+
+- Data loading and preprocessing (cleaning, tokenization, TF-IDF vectorization)
+- Model training using algorithms like **Multinomial Naive Bayes** and **Logistic Regression**
+- Model evaluation with accuracy, classification report, and confusion matrix
+- Ability to predict whether a new SMS is spam or not
+
+---
 
 ## 📁 Dataset
-- [Kaggle - SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
 
-## 🔍 Steps Involved
-1. Data loading & preprocessing
-2. Text cleaning (removing punctuation, lowercasing, etc.)
-3. Label encoding (spam = 1, ham = 0)
-4. Train-test split
-5. TF-IDF vectorization
-6. Naive Bayes training
-7. Evaluation (accuracy, confusion matrix, classification report)
+The dataset used is the [SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) from UCI Machine Learning Repository. It contains labeled SMS messages classified as spam or ham.
 
-## 🚀 How to Run
-1. Clone the repository
-2. Install dependencies:
+---
+
+## 🛠 How to Run
+
+1. Clone the repo:
+
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/your-username/spam-sms-detection.git
+   cd spam-sms-detection
